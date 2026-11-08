@@ -1,0 +1,17 @@
+{
+  "name": "@bimb/record",
+  "version": "0.1.0",
+  "description": "Record the current tab (or a screen) from inside a web page, with clicks and shortcuts lined up to the video. No upload, no server.",
+  "license": "MIT",
+  "author": "Sahil Nasariwala",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist"],
+  "keywords": ["screen-recording", "getDisplayMedia", "MediaRecorder", "tab-capture", "bug-report", "browser"],
+  "repository": { "type": "git", "url": "git+https://github.com/SahilNasariwala/bimb-record.git" },
+  "homepage": "https://bimb.dev/sdk-demo/",
+  "scripts": { "build": "tsc", "test": "vitest run", "prepublishOnly": "npm test && npm run build" },
+  "devDependencies": { "typescript": "^5.6.0", "vitest": "^3.0.0" }
+}
